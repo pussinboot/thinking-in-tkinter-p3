@@ -133,7 +133,7 @@ what you see will give you a clue as to what the problem is.
 
 [revised: 2004-04-26]
 >"""
-from Tkinter import *
+from tkinter import *
 
 class MyApp:
 	def __init__(self, parent):

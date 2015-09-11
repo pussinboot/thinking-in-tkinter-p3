@@ -71,7 +71,7 @@ closely.  And the buttons are surrounded by a nice border of space.
 
 [revised: 2003-02-23
 >"""
-from Tkinter import *
+from tkinter import *
 
 class MyApp:
 	def __init__(self, parent):

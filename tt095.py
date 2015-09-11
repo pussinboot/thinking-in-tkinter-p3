@@ -65,7 +65,7 @@ all.
 
 [revised: 2002-10-01]
 >"""
-from Tkinter import *
+from tkinter import *
 
 class App:
 	def __init__(self, root, use_geometry, show_buttons):
@@ -89,4 +89,5 @@ for use_geometry in (0, 1):
 		root.wm_title("Case " + str(case))  ### (2) Note wm_title Window Manager method
 		display = App(root, use_geometry, show_buttons)
 		root.mainloop()
+				
 				

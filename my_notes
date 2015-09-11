@@ -1,0 +1,44 @@
+tkinter notes
+
+simplest tkinter program
+
+	from tkinter import * ### (1)
+	
+	root = Tk()           ### (2) 
+	root.mainloop()       ### (3)
+
+(2) the toplevel window
+(3) the event loop, waits for things to happen
+
+widget - gui component that does things
+container - container into which can put widgets
+
+	canvas - container for drawing
+	Frame(myParent) - frame associated with parent
+	.pack() - sets up visual relationship bwetween gui component and its parent (grid & place also do similar things)
+		pack(widget,side= {LEFT, RIGHT, TOP, BOTTOM}) - to what side is previous stuff going to be, default is TOP
+
+Button - a widget,
+	widgets have attributes stored in local namespace dictionary
+		button1 = Button(myContainer)
+		button1["text"] = "Hello, World!"
+	can also set attributes with .configure() or when instantiating
+use classes to structure your programs (duh)
+
+binding - define connection/relationship between - widget, type of event, event handler
+	event handler is a method that handles events (like java listener)
+	to create event binding use widget.bind(event_type_name, event_handler_name)
+	"<Button-1>" event - left-click
+	to create command binding set attribute command to fxn
+focus - only one widget at a time can have focus, and responds 2 events
+	usally focus is selected by clicking or tab etc,
+	can use tk_focusFollowsMouse procedure to follow mouse
+	focus_force() forces focus on a widget
+to pass event to bound handler w/ multiple args have to use lambda or currying..
+
+to control layout of a gui
+	widget attributes - ie width, padding
+	pack() options - ie padding
+	nesting of containers 
+
+controling size of container is hard 2 if contains widgets

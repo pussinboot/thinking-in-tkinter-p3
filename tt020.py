@@ -91,7 +91,7 @@ Container1, and you will see how Container1 stretches to accommodate them.
 
 [revised: 2003-02-24]
 >"""
-from Tkinter import *
+from tkinter import *
 
 root = Tk()
 
