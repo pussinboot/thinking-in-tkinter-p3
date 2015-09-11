@@ -28,7 +28,7 @@ background colors.
 
 [revised: 2005-07-15]
 >"""
-from Tkinter import *
+from tkinter import *
 
 class MyApp:
 	def __init__(self, parent):

@@ -129,7 +129,7 @@ the arguments that were passed to the buttonHandler function.
 
 [revised: 2003-02-23]
 >"""
-from Tkinter import *
+from tkinter import *
 
 class MyApp:
 	def __init__(self, parent):
@@ -180,18 +180,17 @@ class MyApp:
 		
 		
 	def buttonHandler(self, argument1, argument2, argument3):   
-		print "    buttonHandler routine received arguments:" \
-			, argument1.ljust(8), argument2, argument3
+		print ("    buttonHandler routine received arguments:" \
+					, argument1.ljust(8), argument2, argument3)
 		
- 	def buttonHandler_a(self, event, argument1, argument2, argument3):
-		print "buttonHandler_a received event", event
+	def buttonHandler_a(self, event, argument1, argument2, argument3):
+		print ("buttonHandler_a received event", event)
 		self.buttonHandler(argument1, argument2, argument3)
 		
 				
-print "\n"*100 # clear the screen
-print "Starting program tt078."								
+print ("Starting program tt078.")				
 root = Tk()
 myapp = MyApp(root)
-print "Ready to start executing the event loop."
+print ("Ready to start executing the event loop.")
 root.mainloop()
-print "Finished       executing the event loop."
+print ("Finished       executing the event loop.")
